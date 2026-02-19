@@ -1,19 +1,13 @@
 import { config, fields, collection } from '@keystatic/core';
 
+const isDev = process.env.NODE_ENV === 'development';
+
 export default config({
-  storage: {
-    kind: 'local',
-  },
-  collections: {
-    posts: collection({
-      label: 'Posts',
-      slugField: 'title',
-      path: 'src/content/posts/*',
-      format: { contentField: 'content' },
-      schema: {
-        title: fields.slug({ name: { label: 'Title' } }),
-        content: fields.markdoc({ label: 'Content' }),
+  storage: isDev 
+    ? { kind: 'local' } 
+    : { 
+        kind: 'github', 
+        repo: 'jouw-gebruikersnaam/jouw-repo-naam' 
       },
-    }),
-  },
+  // ... rest van je collections
 });

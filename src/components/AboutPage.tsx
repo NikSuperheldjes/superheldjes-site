@@ -29,7 +29,7 @@ export default function About() {
           <div className="space-y-4 text-center">
             <PawPrint className="text-primary mx-auto h-12 w-12" />
             <h1 className="font-heading text-foreground text-4xl font-bold md:text-5xl">
-              About Purrfectly Zen
+              Over Superheldjes
             </h1>
           </div>
 
@@ -37,18 +37,16 @@ export default function About() {
             <div className="space-y-6 p-8 md:p-12">
               <div className="space-y-4">
                 <h2 className="font-heading text-foreground text-2xl font-bold">
-                  Our Mission
+                  Missie
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  At Purrfectly Zen, we believe that cats are the ultimate
-                  meditation teachers. They embody stillness, presence, and the
-                  art of doing absolutely nothing—which is actually everything.
+                 Hier wat meer inhoud
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h2 className="font-heading text-foreground text-2xl font-bold">
-                  Why Cats?
+                  Waarom bewegen
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Cats teach us the philosophy of zen through their everyday
