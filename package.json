@@ -4,12 +4,15 @@
   "description": "Find your zen. One breath, one paw print at a time.",
   "license": "MIT",
   "author": "Fauzira Alpiandi <fauziralpiandi.dev@gmail.com>",
+  "type": "module",
   "scripts": {
     "astro": "astro",
-    "build": "astro build",
     "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
     "format": "prettier --write .",
-    "preview": "astro preview"
+    "lint": "tsc"
   },
   "prettier": {
     "bracketSpacing": true,
@@ -28,7 +31,10 @@
     ]
   },
   "dependencies": {
+    "@astrojs/markdoc": "latest",
     "@astrojs/react": "^4.4.2",
+    "@keystatic/astro": "latest",
+    "@keystatic/core": "latest",
     "astro": "^5.16.9",
     "clsx": "^2.1.1",
     "framer-motion": "^12.26.2",
@@ -39,17 +45,13 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
-    "@types/node": "^25.0.8",
-    "@types/react": "^19.2.8",
-    "@types/react-dom": "^19.2.3",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "prettier": "^3.8.0",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3",
-    "@keystatic/core": "latest",
-    "@keystatic/astro": "latest",
-    "@astrojs/markdoc": "latest"
-    
+    "typescript": "^5.9.3"
   }
 }
