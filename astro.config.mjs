@@ -1,19 +1,20 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import tailwind from '@astrojs/tailwind';
 import markdoc from '@astrojs/markdoc';
 import keystatic from '@keystatic/astro';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://astro.build/config
 export default defineConfig({
-  // We voegen hier alle 'gereedschappen' toe die je site nodig heeft
+  // 1. BELANGRIJK: Zet output op 'hybrid' of 'server'
+  output: 'hybrid', 
+  
   integrations: [
     react(), 
-    tailwind(), 
     markdoc(), 
-    keystatic()
+    keystatic() // 2. Zorg dat deze in de lijst staat
   ],
   
-  // Belangrijk voor Azure Static Web Apps: we bouwen een statische site
-  output: 'static',
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
