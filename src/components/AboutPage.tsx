@@ -59,7 +59,7 @@ export default function About() {
 
               <div className="space-y-4">
                 <h2 className="font-heading text-foreground text-2xl font-bold">
-                  About Our Name
+                  Waarom Superheldjes?
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   "Purrfect" is a playful wordplay combining two things we love:
