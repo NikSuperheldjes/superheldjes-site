@@ -1,6 +1,11 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": ["**/*.ts", "**/*.tsx", "src/**/*.astro"],
+  "include": [
+    "**/*.ts", 
+    "**/*.tsx", 
+    "src/**/*.astro", 
+    "keystatic.config.ts"
+  ],
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -9,7 +14,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
-      "@assets/*": ["./attached_assets/*"]
+      "@assets/*": ["./src/assets/*"]
     }
   }
 }
